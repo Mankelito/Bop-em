@@ -13,38 +13,30 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setSupportActionBar(findViewById(R.id.toolbar))
 
 
-        val buttonOKAbout = findViewById<Button>(R.id.about_button)
+        val buttonSettings = findViewById<Button>(R.id.settings_button)
+        val buttonAbout = findViewById<Button>(R.id.about_button)
+        val buttonNext = findViewById<Button>(R.id.next_button)
 
         // Button click listeners
-        buttonOKAbout.setOnClickListener {
+        buttonSettings.setOnClickListener {
+            val intentSettings = Intent(this, SettingsActivity::class.java)
+            startActivity(intentSettings)
+        }
+
+        buttonAbout.setOnClickListener {
             val intentAbout = Intent(this, AboutActivity::class.java)
+            startActivity(intentAbout)
+        }
+
+        buttonAbout.setOnClickListener {
+            val intentAbout = Intent(this, GameActivity::class.java)
             startActivity(intentAbout)
         }
 
 
 
 
-    }
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.main_menu, menu)
-        return true
-    }
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.action_settings -> {
-                val intentPreferences = Intent(this, SettingsActivity::class.java)
-                startActivity(intentPreferences)
-                return true
-            }
-            R.id.action_about -> {
-                val intentPreferences = Intent(this, AboutActivity::class.java)
-                startActivity(intentPreferences)
-                return true
-            }
-            else -> return super.onOptionsItemSelected(item)
-        }
     }
 }

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/category_playerData">
+
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="Default value"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/playerData_playerID"
+            app:key="playerid"
+            app:summary="@string/playerData_playerIDdescription" />
+    </PreferenceCategory>
+    <EditTextPreference
+        android:defaultValue="Default value"
+        android:key="highscore"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/playerData_highScore" />
+    <PreferenceCategory android:title="@string/category_gameCustomize">
+
+        <ListPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="1"
+            android:title="@string/gameCustomize_theme"
+            app:entries="@array/color_entries"
+            app:entryValues="@array/color_values"
+            app:key="gamecolor" />
+        <ListPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="1"
+            android:title="@string/gameCustomize_volume"
+            app:entries="@array/volume_entries"
+            app:entryValues="@array/volume_values"
+            app:key="volume" />
+        <ListPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="1"
+            android:title="@string/gameCustomize_intructions"
+            app:entries="@array/instructions_entries"
+            app:entryValues="@array/instructions_values"
+            app:key="instructions" />
+        <ListPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="1"
+            android:title="@string/gameCustomize_UISize"
+            app:entries="@array/size_entries"
+            app:entryValues="@array/size_values"
+            app:key="size" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/category_general">
+
+    </PreferenceCategory>
+</PreferenceScreen>
