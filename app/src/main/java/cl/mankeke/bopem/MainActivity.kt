@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intentAbout)
         }
 
-        buttonAbout.setOnClickListener {
+        buttonNext.setOnClickListener {
             val intentAbout = Intent(this, GameActivity::class.java)
             startActivity(intentAbout)
         }
