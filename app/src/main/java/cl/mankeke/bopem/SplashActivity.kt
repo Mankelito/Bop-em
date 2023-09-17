@@ -37,7 +37,7 @@ class SplashActivity : AppCompatActivity() {
         val imageView = findViewById<ImageView>(R.id.imagePotato)
 
         imageView.startAnimation(fadeIn)
-        val seconds = 2
+        val seconds = 3000
         val delayMillis = seconds!!.toLong() // 2 seconds (adjust as needed)
 
         val handler = Handler(Looper.getMainLooper())
