@@ -9,7 +9,7 @@ Al darle al boton next dentro del menú, se presnta la pestaña de juego, donde 
 Desarrollado por Miguelangel Peña.
 
 Link demonstración sonidos:
-https://youtu.be/MZMMF_gsRsU
+https://youtu.be/JCl4W8bybAE
 
 Link APK: 
 https://drive.google.com/drive/folders/1Z7KKpXy9zVcnVTR1-mbh20zrOjuTIcJz?usp=sharing
